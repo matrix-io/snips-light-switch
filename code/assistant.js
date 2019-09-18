@@ -3,8 +3,8 @@
 /////////////
 var mqtt = require('mqtt');
 var client  = mqtt.connect('mqtt://localhost', { port: 1883 });
-var relay = require('./relayLightLite.js');
-var everloop = require('./everloopLightLite.js');
+var relay = require('./relay.js');
+var everloop = require('./everloop.js');
 var snipsUserName = 'YOUR_SNIPS_USERNAME';
 var wakeword = 'hermes/hotword/default/detected';
 var sessionEnd = 'hermes/dialogueManager/sessionEnded';
